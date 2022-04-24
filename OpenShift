@@ -1,0 +1,55 @@
+kind: Project
+apiVersion: project.openshift.io/v1
+metadata:
+  name: sn-labs-u2018014152k
+  uid: f2fa7068-f9d2-4e47-b918-49cf4bf91b40
+  resourceVersion: '376294409'
+  creationTimestamp: '2022-04-24T15:33:18Z'
+  labels:
+    kubernetes.io/metadata.name: sn-labs-u2018014152k
+    learnersandbox: 'true'
+    name: sn-labs-u2018014152k
+    openshift-pipelines.tekton.dev/namespace-reconcile-version: v1.5
+  annotations:
+    openshift.io/sa.scc.mcs: 's0:c40,c20'
+    openshift.io/sa.scc.supplemental-groups: 1001600000/10000
+    openshift.io/sa.scc.uid-range: 1001600000/10000
+  managedFields:
+    - manager: cluster-policy-controller
+      operation: Update
+      apiVersion: v1
+      time: '2022-04-24T15:33:18Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:annotations':
+            .: {}
+            'f:openshift.io/sa.scc.mcs': {}
+            'f:openshift.io/sa.scc.supplemental-groups': {}
+            'f:openshift.io/sa.scc.uid-range': {}
+    - manager: unknown
+      operation: Update
+      apiVersion: v1
+      time: '2022-04-24T15:33:18Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:labels':
+            .: {}
+            'f:kubernetes.io/metadata.name': {}
+            'f:learnersandbox': {}
+            'f:name': {}
+    - manager: openshift-pipelines-operator
+      operation: Update
+      apiVersion: v1
+      time: '2022-04-24T15:33:20Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        'f:metadata':
+          'f:labels':
+            'f:openshift-pipelines.tekton.dev/namespace-reconcile-version': {}
+spec:
+  finalizers:
+    - kubernetes
+status:
+  phase: Active
